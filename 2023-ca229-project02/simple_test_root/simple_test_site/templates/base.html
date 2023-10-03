@@ -1,0 +1,52 @@
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+            {% block title %}   
+                {{title}}
+            {% endblock title %}
+        </title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+		<link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'favicon.ico' %}" rel="icon" type="image/x-icon">
+	</head>
+	<body>
+		{% include 'navbar.html' %}
+		{% block heroContent %}
+			{% autoescape off %}
+			{{hero_content}}
+		    {% endautoescape %}
+		{% endblock heroContent%}
+
+        	{% block main_content %}
+		    	{% autoescape off %}
+					{{page_content}}
+		    	{% endautoescape %}
+        	{% endblock main_content %}
+
+
+		
+		<footer class="section-p1">
+        		<div class="follow">
+          		<h4>Follow us</h4>
+          		<div class="socials">
+            		<i class="fab fa-facebook"></i>
+            		<i class="fab fa-twitter"></i>
+            		<i class="fab fa-instagram"></i>
+            		<i class="fab fa-youtube"></i>
+            		<i class="fab fa-snapchat"></i>
+          		</div>
+        		</div>
+			<div class="copyright">
+        		<p>© DCU 2022-2023 This is a paired coursework </p>
+      		</div>
+		</footer>
+		<a href="#" id="scroll">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="{% static 'main.js' %}"></script>
+	</body>
+</html>

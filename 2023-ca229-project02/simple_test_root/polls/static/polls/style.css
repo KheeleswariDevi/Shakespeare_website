@@ -1,0 +1,155 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A192F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Poll question */
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #D69E2E;
+  }
+  
+  /* Poll choices */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  
+  li {
+    background-color: #bdbdbd;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #0A192F;
+  }
+  
+  li:hover {
+    background-color: #D69E2E;
+    color: #F5F5F5;
+  }
+  
+  /* Poll form */
+  form {
+    position: relative;
+  }
+  
+  form button {
+    background-color: #D69E2E;
+    border: 1px solid #D69E2E;
+    color: #000;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  label {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #D69E2E;
+  }
+  
+  input[type="radio"] {
+    margin-right: 0.5em;
+  }
+  
+  button[type="submit"] {
+    background-color: #D69E2E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 1em;
+    font-size: 1.2em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #F5F5F5;
+    color: #0A192F;
+  }
+  
+  /* Results */
+  #results {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background-color: #F5F5F5;
+    padding: 20px;
+  }
+  
+  #results h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #D69E2E;
+  }
+  
+  #results ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  
+  #results li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #0A192F;
+  }
+  
+  #results .total-votes {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 1em;
+    color: #D69E2E;
+  }
+  
+  #results .bar {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    height: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #results .bar .fill {
+    background-color: #D69E2E;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  #vote-again-container {
+    background-color: #D69E2E;
+    border: 1px solid #D69E2E;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+#vote-container {
+    background-color: #D69E2E;
+    border: 1px solid #D69E2E;
+    padding: 0.05px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
